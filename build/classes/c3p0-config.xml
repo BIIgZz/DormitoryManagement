@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+	<default-config>
+		<property name="user">ssgl</property>
+		<property name="password">123456</property>
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+		<property name="jdbcUrl">jdbc:mysql://47.94.207.51:3306/ssgl?useUnicode=true&amp;characterEncoding=UTF8</property>
+		<property name="numHelperThreads">3</property>
+	</default-config>
+</c3p0-config>

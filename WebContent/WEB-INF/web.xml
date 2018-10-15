@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>dormitoryManage</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>LoginServlet</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.dormitoryManage.web.loginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DisbyclaServlet</display-name>
+    <servlet-name>DisbyclaServlet</servlet-name>
+    <servlet-class>com.dormitoryManage.web.DisbyclaServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DisbyclaServlet</servlet-name>
+    <url-pattern>/disbycla</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SelectClassServelt</display-name>
+    <servlet-name>SelectClassServelt</servlet-name>
+    <servlet-class>com.dormitoryManage.web.SelectClassServelt</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SelectClassServelt</servlet-name>
+    <url-pattern>/selectClass</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CountNumServlet</display-name>
+    <servlet-name>CountNumServlet</servlet-name>
+    <servlet-class>com.dormitoryManage.web.CountNumServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CountNumServlet</servlet-name>
+    <url-pattern>/countNum</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SelectApartmentServlet</display-name>
+    <servlet-name>SelectApartmentServlet</servlet-name>
+    <servlet-class>com.dormitoryManage.web.SelectApartmentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SelectApartmentServlet</servlet-name>
+    <url-pattern>/selectApartment</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SelectStudentsServlet</display-name>
+    <servlet-name>SelectStudentsServlet</servlet-name>
+    <servlet-class>com.dormitoryManage.web.SelectStudentsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SelectStudentsServlet</servlet-name>
+    <url-pattern>/selectStudents</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SelectBedRoomServlet</display-name>
+    <servlet-name>SelectBedRoomServlet</servlet-name>
+    <servlet-class>com.dormitoryManage.web.SelectBedRoomServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SelectBedRoomServlet</servlet-name>
+    <url-pattern>/selectBedRoom</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SelectStudentServlet</display-name>
+    <servlet-name>SelectStudentServlet</servlet-name>
+    <servlet-class>com.dormitoryManage.web.SelectStudentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SelectStudentServlet</servlet-name>
+    <url-pattern>/selectStudent</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>TodisbyClassServlet</display-name>
+    <servlet-name>TodisbyClassServlet</servlet-name>
+    <servlet-class>com.dormitoryManage.web.TodisbyClassServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TodisbyClassServlet</servlet-name>
+    <url-pattern>/todisbycla</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DisbystuServlet</display-name>
+    <servlet-name>DisbystuServlet</servlet-name>
+    <servlet-class>com.dormitoryManage.web.DisbystuServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DisbystuServlet</servlet-name>
+    <url-pattern>/disbystu</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CountCollegeNumServlet</display-name>
+    <servlet-name>CountCollegeNumServlet</servlet-name>
+    <servlet-class>com.dormitoryManage.web.CountCollegeNumServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CountCollegeNumServlet</servlet-name>
+    <url-pattern>/countCollegeNum</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>EmpByStuServlet</display-name>
+    <servlet-name>EmpByStuServlet</servlet-name>
+    <servlet-class>com.dormitoryManage.web.EmpByStuServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EmpByStuServlet</servlet-name>
+    <url-pattern>/empByStu</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>EmpByClassServlet</display-name>
+    <servlet-name>EmpByClassServlet</servlet-name>
+    <servlet-class>com.dormitoryManage.web.EmpByClassServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EmpByClassServlet</servlet-name>
+    <url-pattern>/empByClass</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ManagerListServlet</display-name>
+    <servlet-name>ManagerListServlet</servlet-name>
+    <servlet-class>com.dormitoryManage.web.ManagerListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ManagerListServlet</servlet-name>
+    <url-pattern>/managerList</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UpdateManagerServlet</display-name>
+    <servlet-name>UpdateManagerServlet</servlet-name>
+    <servlet-class>com.dormitoryManage.web.UpdateManagerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateManagerServlet</servlet-name>
+    <url-pattern>/updateManager</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UpdateManServlet</display-name>
+    <servlet-name>UpdateManServlet</servlet-name>
+    <servlet-class>com.dormitoryManage.web.UpdateManServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateManServlet</servlet-name>
+    <url-pattern>/updateMan</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PageServlet</display-name>
+    <servlet-name>PageServlet</servlet-name>
+    <servlet-class>com.dormitoryManage.web.PageServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PageServlet</servlet-name>
+    <url-pattern>/page</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ManagerAddServlet</display-name>
+    <servlet-name>ManagerAddServlet</servlet-name>
+    <servlet-class>com.dormitoryManage.web.ManagerAddServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ManagerAddServlet</servlet-name>
+    <url-pattern>/managerAdd</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ManagerDeleteServlet</display-name>
+    <servlet-name>ManagerDeleteServlet</servlet-name>
+    <servlet-class>com.dormitoryManage.web.ManagerDeleteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ManagerDeleteServlet</servlet-name>
+    <url-pattern>/managerDelete</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ManagerSearchServlet</display-name>
+    <servlet-name>ManagerSearchServlet</servlet-name>
+    <servlet-class>com.dormitoryManage.web.ManagerSearchServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ManagerSearchServlet</servlet-name>
+    <url-pattern>/managerSearch</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>GetCollegeServlet</display-name>
+    <servlet-name>GetCollegeServlet</servlet-name>
+    <servlet-class>com.dormitoryManage.web.GetCollegeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetCollegeServlet</servlet-name>
+    <url-pattern>/getCollege</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LoginOutServlet</display-name>
+    <servlet-name>LoginOutServlet</servlet-name>
+    <servlet-class>com.dormitoryManage.web.LoginOutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginOutServlet</servlet-name>
+    <url-pattern>/loginOut</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+<description></description>
+<display-name>AnnounceServlet</display-name>
+<servlet-name>AnnounceServlet</servlet-name>
+<servlet-class>com.dormitoryManage.web.AnnounceServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>AnnounceServlet</servlet-name>
+<url-pattern>/announce</url-pattern>
+</servlet-mapping>
+<servlet>
+<description></description>
+<display-name>AnnounceSearchServlet</display-name>
+<servlet-name>AnnounceSearchServlet</servlet-name>
+<servlet-class>com.dormitoryManage.web.AnnounceSearchServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>AnnounceSearchServlet</servlet-name>
+<url-pattern>/announceSearch</url-pattern>
+</servlet-mapping>
+<servlet>
+<description></description>
+<display-name>AnnounceSearServlet</display-name>
+<servlet-name>AnnounceSearServlet</servlet-name>
+<servlet-class>com.dormitoryManage.web.AnnounceSearServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>AnnounceSearServlet</servlet-name>
+<url-pattern>/announceSear</url-pattern>
+</servlet-mapping>
+<servlet>
+<description></description>
+<display-name>AnnounceUpdateServlet</display-name>
+<servlet-name>AnnounceUpdateServlet</servlet-name>
+<servlet-class>com.dormitoryManage.web.AnnounceUpdateServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>AnnounceUpdateServlet</servlet-name>
+<url-pattern>/announceUpdate</url-pattern>
+</servlet-mapping>
+<servlet>
+<description></description>
+<display-name>AnnouncementChangeServlet</display-name>
+<servlet-name>AnnouncementChangeServlet</servlet-name>
+<servlet-class>com.dormitoryManage.web.AnnouncementChangeServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>AnnouncementChangeServlet</servlet-name>
+<url-pattern>/announcementChange</url-pattern>
+</servlet-mapping>
+<servlet>
+<description></description>
+<display-name>BedroomServlet</display-name>
+<servlet-name>BedroomServlet</servlet-name>
+<servlet-class>com.dormitoryManage.web.BedroomServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>BedroomServlet</servlet-name>
+<url-pattern>/bedroom</url-pattern>
+</servlet-mapping>
+<servlet>
+<description></description>
+<display-name>BedroomSearchServlet</display-name>
+<servlet-name>BedroomSearchServlet</servlet-name>
+<servlet-class>com.dormitoryManage.web.BedroomSearchServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>BedroomSearchServlet</servlet-name>
+<url-pattern>/bedroomSearch</url-pattern>
+</servlet-mapping>
+<servlet>
+<description></description>
+<display-name>BedroomSearServlet</display-name>
+<servlet-name>BedroomSearServlet</servlet-name>
+<servlet-class>com.dormitoryManage.web.BedroomSearServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>BedroomSearServlet</servlet-name>
+<url-pattern>/bedroomSear</url-pattern>
+</servlet-mapping>
+<servlet>
+<description></description>
+<display-name>BedroomUpdateServlet</display-name>
+<servlet-name>BedroomUpdateServlet</servlet-name>
+<servlet-class>com.dormitoryManage.web.BedroomUpdateServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>BedroomUpdateServlet</servlet-name>
+<url-pattern>/bedroomUpdate</url-pattern>
+</servlet-mapping>
+<servlet>
+<description></description>
+<display-name>StudentSearchServlet</display-name>
+<servlet-name>StudentSearchServlet</servlet-name>
+<servlet-class>com.dormitoryManage.web.StudentSearchServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>StudentSearchServlet</servlet-name>
+<url-pattern>/studentSearch</url-pattern>
+</servlet-mapping>
+<servlet>
+<description></description>
+<display-name>ClassSearchServlet</display-name>
+<servlet-name>ClassSearchServlet</servlet-name>
+<servlet-class>com.dormitoryManage.web.ClassSearchServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>ClassSearchServlet</servlet-name>
+<url-pattern>/classSearch</url-pattern>
+</servlet-mapping>
+<servlet>
+<description></description>
+<display-name>BedroomChangeServlet</display-name>
+<servlet-name>BedroomChangeServlet</servlet-name>
+<servlet-class>com.dormitoryManage.web.BedroomChangeServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>BedroomChangeServlet</servlet-name>
+<url-pattern>/bedroomChange</url-pattern>
+</servlet-mapping>
+<servlet>
+<description></description>
+<display-name>ClassSearServlet</display-name>
+<servlet-name>ClassSearServlet</servlet-name>
+<servlet-class>com.dormitoryManage.web.ClassSearServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>ClassSearServlet</servlet-name>
+<url-pattern>/classSear</url-pattern>
+</servlet-mapping>
+<servlet>
+<description></description>
+<display-name>VisitorServlet</display-name>
+<servlet-name>VisitorServlet</servlet-name>
+<servlet-class>com.dormitoryManage.web.VisitorServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>VisitorServlet</servlet-name>
+<url-pattern>/visitor</url-pattern>
+</servlet-mapping>
+<servlet>
+<description></description>
+<display-name>VisitorSearchServlet</display-name>
+<servlet-name>VisitorSearchServlet</servlet-name>
+<servlet-class>com.dormitoryManage.web.VisitorSearchServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>VisitorSearchServlet</servlet-name>
+<url-pattern>/visitorSearch</url-pattern>
+</servlet-mapping>
+<servlet>
+<description></description>
+<display-name>GetBedroomServlet</display-name>
+<servlet-name>GetBedroomServlet</servlet-name>
+<servlet-class>com.dormitoryManage.web.GetBedroomServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>GetBedroomServlet</servlet-name>
+<url-pattern>/getBedroom</url-pattern>
+</servlet-mapping>
+<servlet>
+<description></description>
+<display-name>VisitorUpdateServlet</display-name>
+<servlet-name>VisitorUpdateServlet</servlet-name>
+<servlet-class>com.dormitoryManage.web.VisitorUpdateServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>VisitorUpdateServlet</servlet-name>
+<url-pattern>/visitorUpdate</url-pattern>
+</servlet-mapping>
+<servlet>
+<description></description>
+<display-name>VisitorSearServlet</display-name>
+<servlet-name>VisitorSearServlet</servlet-name>
+<servlet-class>com.dormitoryManage.web.VisitorSearServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>VisitorSearServlet</servlet-name>
+<url-pattern>/visitorSear</url-pattern>
+</servlet-mapping>
+<servlet>
+<description></description>
+<display-name>VisitorChangeServlet</display-name>
+<servlet-name>VisitorChangeServlet</servlet-name>
+<servlet-class>com.dormitoryManage.web.VisitorChangeServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>VisitorChangeServlet</servlet-name>
+<url-pattern>/visitorChange</url-pattern>
+</servlet-mapping>
+<servlet>
+<description></description>
+<display-name>StudentSearServlet</display-name>
+<servlet-name>StudentSearServlet</servlet-name>
+<servlet-class>com.dormitoryManage.web.StudentSearServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>StudentSearServlet</servlet-name>
+<url-pattern>/studentSear</url-pattern>
+</servlet-mapping>
+<servlet>
+<description></description>
+<display-name>AnnouncementDeleteServlet</display-name>
+<servlet-name>AnnouncementDeleteServlet</servlet-name>
+<servlet-class>com.dormitoryManage.web.AnnouncementDeleteServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>AnnouncementDeleteServlet</servlet-name>
+<url-pattern>/announcementDelete</url-pattern>
+</servlet-mapping>
+<servlet>
+<description></description>
+<display-name>VisitorDeleteServlet</display-name>
+<servlet-name>VisitorDeleteServlet</servlet-name>
+<servlet-class>com.dormitoryManage.web.VisitorDeleteServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>VisitorDeleteServlet</servlet-name>
+<url-pattern>/visitorDelete</url-pattern>
+</servlet-mapping>
+<servlet>
+<description></description>
+<display-name>VisitorDeleteAllServlet</display-name>
+<servlet-name>VisitorDeleteAllServlet</servlet-name>
+<servlet-class>com.dormitoryManage.web.VisitorDeleteAllServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>VisitorDeleteAllServlet</servlet-name>
+<url-pattern>/visitorDeleteAll</url-pattern>
+</servlet-mapping>
+<servlet>
+<description></description>
+<display-name>AnnouncementDeleteAllServlet</display-name>
+<servlet-name>AnnouncementDeleteAllServlet</servlet-name>
+<servlet-class>com.dormitoryManage.web.AnnouncementDeleteAllServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>AnnouncementDeleteAllServlet</servlet-name>
+<url-pattern>/announcementDeleteAll</url-pattern>
+</servlet-mapping>
+ <servlet>
+    <description></description>
+    <display-name>annoServlet</display-name>
+    <servlet-name>annoServlet</servlet-name>
+    <servlet-class>com.dormitoryManage.web.annoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>annoServlet</servlet-name>
+    <url-pattern>/annoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>stuInfoServlet</display-name>
+    <servlet-name>stuInfoServlet</servlet-name>
+    <servlet-class>com.dormitoryManage.web.stuInfoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>stuInfoServlet</servlet-name>
+    <url-pattern>/stuInfoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>visitorServlet</display-name>
+    <servlet-name>visitorServlet</servlet-name>
+    <servlet-class>com.dormitoryManage.web.visitorServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>visitorServlet</servlet-name>
+    <url-pattern>/visitorServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>bedroomServlet</display-name>
+    <servlet-name>bedroomServlet</servlet-name>
+    <servlet-class>com.dormitoryManage.web.bedroomServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>bedroomServlet</servlet-name>
+    <url-pattern>/bedroomServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>classmatesServlet</display-name>
+    <servlet-name>classmatesServlet</servlet-name>
+    <servlet-class>com.dormitoryManage.web.classmatesServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>classmatesServlet</servlet-name>
+    <url-pattern>/classmatesServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>newServlet</display-name>
+    <servlet-name>newServlet</servlet-name>
+    <servlet-class>com.dormitoryManage.web.newServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>newServlet</servlet-name>
+    <url-pattern>/new</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>changePasServlet</display-name>
+    <servlet-name>changePasServlet</servlet-name>
+    <servlet-class>com.dormitoryManage.web.changePasServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>changePasServlet</servlet-name>
+    <url-pattern>/changePasServlet</url-pattern>
+  </servlet-mapping>
+    <servlet>
+	<display-name>VisitorAddServlet</display-name>
+    <servlet-name>VisitorAddServlet</servlet-name>
+    <servlet-class>com.dormitoryManage.web.VisitorAddServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>VisitorAddServlet</servlet-name>
+    <url-pattern>/visitorAdd</url-pattern>
+  </servlet-mapping>  
+  
+  
+  
+</web-app>

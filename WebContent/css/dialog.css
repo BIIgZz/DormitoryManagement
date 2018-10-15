@@ -1,0 +1,175 @@
+/**
+ * dialog style 
+ * Date： 2018/9/24
+ * author： chtao
+*/
+.dialog {
+    display: none;
+}
+
+.dialog .bg-opacity {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.dialog .show-dialog {
+    position: fixed;
+    z-index: 10001;
+    width: 350px;
+    height: 300px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 25px 1px #333;
+    border-radius: 11px;
+    background-color: #fff;
+    color: #000;
+    font-size: 18px;
+    animation-duration: 400ms;
+    animation-timing-function: linear;
+}
+
+@keyframes fade-in-out {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes dialog-shake {
+    33%{
+        width: 400px;
+        height: 350px;
+    }
+
+    66% {
+        width: 300px;
+        height: 250px;
+    }
+}
+
+.dialog .show-dialog .title {
+    height: 16%;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    line-height: 50px;
+
+}
+
+.dialog .show-dialog .xx {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    content: '';
+    position: absolute;
+    top: 4px;
+    right: 0;
+}
+
+.dialog .show-dialog .xx::after,
+.dialog .show-dialog .xx::before {
+    border-radius: 1px;
+    display: inline-block;
+    width: 2px;
+    height: 25px;
+    background-color: deepskyblue;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 50%, 50%;
+    animation-duration: 400ms;
+    animation-timing-function: cubic-bezier(0.6, -0.28, 0.74, 0.05);
+}
+
+.dialog .show-dialog .xx:hover {
+    cursor: pointer;
+}
+
+.dialog .show-dialog .xx:hover.xx::after {
+    animation-name: rotateXX1;
+}
+
+.dialog .show-dialog .xx:hover.xx::before {
+    animation-name: rotateXX2;
+}
+
+
+.dialog .show-dialog .xx::after {
+    transform: translate(-50%, -50%) rotateZ(35deg);
+}
+
+.dialog .show-dialog .xx::before {
+    transform: translate(-50%, -50%) rotateZ(-35deg);
+}
+
+@keyframes rotateXX1 {
+    0% {
+        transform: translate(-50%, -50%) rotateZ(35deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotateZ(395deg);
+    }
+}
+
+@keyframes rotateXX2 {
+    0% {
+        transform: translate(-50%, -50%) rotateZ(-30deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotateZ(390deg);
+    }
+}
+
+.dialog .show-dialog div.content {
+    height: 60%;
+    width: 350px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px 50px;
+    font-size: 22px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.dialog .show-dialog div.d-btn {
+    height: 23%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+}
+
+.dialog .show-dialog div.d-btn span {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    display: inline-block;
+    width: 120px;
+    border-radius: 18px;
+}
+
+.dialog .show-dialog div.d-btn .confirm {
+    background-color: red;
+}
+
+.dialog .show-dialog div.d-btn .cancle {
+    background-color: deepskyblue;
+}
+
+
+.dialog .show-dialog div.d-btn .confirm:hover,
+.dialog .show-dialog div.d-btn .cancle:hover {
+    cursor: pointer;
+}
